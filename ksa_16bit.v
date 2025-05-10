@@ -72,7 +72,9 @@ module ksa_16bit
         end
         
         for(u=0; u<16; u=u+1)                //PPC Block
+        begin
             assign Cf[u] = G4[u]|(P4[u]&Ci);
+        end
         
         for(v=0; v<16; v=v+1)                //Sum Block
         begin
