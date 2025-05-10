@@ -1,9 +1,9 @@
 `timescale 1ns / 1ps
 module ksa_16bit
-    (input [15:0] A, B;
-    input Ci;
-    output [15:0] S;
-    output Co);
+    (input [15:0] A, B,
+     input Ci,
+     output [15:0] S,
+     output Co);
 
     wire [15:0] G, P, G1, P1, G2, P2, G3, P3, G4, P4, Cf;
     genvar p, q, r, s, t, u, v;
